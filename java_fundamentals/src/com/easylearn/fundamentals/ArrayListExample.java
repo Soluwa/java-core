@@ -13,7 +13,7 @@ public class ArrayListExample {
 	Person p4 = new Person("Ayesha Kata",54,"Indian","Germany");
 	Person p5 = new Person("Joshua Driscoll",22,"Russian","New Zealand");
 	Person p6 = new Person("Rose Wilshire",43,"Polish","South African");
-	Person p7 = new Person("Emily Dunes",82,"Brazilian","Brazil");
+	Person p7 = new Person("Emily Dunes",82,"Brazilian","Brazil"); 
 	
 	public void loadArrayList() 
 	{

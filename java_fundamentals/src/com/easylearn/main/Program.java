@@ -1,20 +1,19 @@
 package com.easylearn.main;
-import com.easylearn.fundamentals.AddsTwoNumbers;
-import com.easylearn.fundamentals.ArrayListExample;
-import com.easylearn.fundamentals.BMICalculator;
-import com.easylearn.fundamentals.CodeExample;
-import com.easylearn.fundamentals.SampleArray;
-import com.easylearn.fundamentals.VariableSwapper;
-import com.easylearn.utility.PathFormer;
-import com.easylearn.utility.TextFileReader;
+import com.easylearn.fundamentals.PrimeCheckerLimit;
+import com.easylearn.fundamentals.PrimeCheckerSingle;
 
 public abstract class Program {
 
 	public static void main(String[] args) {
-		CodeExample ce = new CodeExample();
-		AddsTwoNumbers atn = new AddsTwoNumbers();
-		SampleArray ar = new SampleArray();
-		ArrayListExample ale = new ArrayListExample();
+		PrimeCheckerLimit checker = new PrimeCheckerLimit();
+		PrimeCheckerSingle pcs = new PrimeCheckerSingle();
+		System.out.println(pcs.checkIfIsPrime());
+		//checker.getAllPrimeWithinSpecifiedLimit(40);
+		/*
+		 * CodeExample ce = new CodeExample(); AddsTwoNumbers atn = new
+		 * AddsTwoNumbers(); SampleArray ar = new SampleArray(); ArrayListExample ale =
+		 * new ArrayListExample();
+		 */
 		
 		/*
 		 * ce.greetings("Good morning friends!");
@@ -24,7 +23,8 @@ public abstract class Program {
 		 * Paths.get(""); String s = currentRelativePath.toAbsolutePath().toString();
 		 * System.out.println("Current absolute path is: " + s);
 		 */
-		System.out.println(new TextFileReader().ReadFile(new PathFormer().constructPath("\\Resource\\heavilyoverweightadvice")));
+		//System.out.println(new TextFileReader().ReadFile(new PathFormer().constructPath("\\Resource\\heavilyoverweightadvice")));
+		//new BMICalculator().calculateBMI();
 		 
 
 	}

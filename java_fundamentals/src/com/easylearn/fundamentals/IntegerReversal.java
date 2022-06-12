@@ -7,6 +7,7 @@ public class IntegerReversal {
 			result = result*10 + num%10;
 			num/=10;
 		}
+		
 		return result;
 	}
 }

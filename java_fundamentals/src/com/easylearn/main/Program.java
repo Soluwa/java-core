@@ -1,15 +1,15 @@
 package com.easylearn.main;
-import java.text.MessageFormat;
-
 import com.easylearn.fundamentals.AmstrongChecker;
 import com.easylearn.fundamentals.DuplicateInArrFinder;
 import com.easylearn.fundamentals.IntegerReversal;
 import com.easylearn.fundamentals.IntegerReversalWithStringBuffer;
+import com.easylearn.fundamentals.MaxMinNumFinderInArray;
 import com.easylearn.fundamentals.MissingNumberFinderInArr;
 import com.easylearn.fundamentals.PrimeCheckerLimit;
 import com.easylearn.fundamentals.PrimeCheckerSingle;
 import com.easylearn.fundamentals.StringReversal;
 import com.easylearn.fundamentals.StringReversalWithBuffer;
+import com.easylearn.fundamentals.StringSwapper;
 
 public abstract class Program {
 
@@ -23,11 +23,12 @@ public abstract class Program {
 		IntegerReversalWithStringBuffer irwsb = new IntegerReversalWithStringBuffer();
 		MissingNumberFinderInArr mnfia = new MissingNumberFinderInArr();
 		DuplicateInArrFinder diaf = new DuplicateInArrFinder();
+		MaxMinNumFinderInArray mmnfia = new MaxMinNumFinderInArray();
+		StringSwapper sss = new StringSwapper();
+		sss.swapStringSupplied("Praise", "Unlimited");
 		
-		System.out.println(MessageFormat.format("The missing number in the supplied array is: {0}",
-													mnfia.findMissingNumber(new int[]{1,3,4,5,6,7})));
-		System.out.println(irwsb.reverseInteger(4589));
-		diaf.findDuplicateInArr(new String[] {"Spain","Germany","England","Italy","Germany","USA","Nigeria","Ethopia","Spain","Nigeria"});
+		System.out.println(mmnfia.findMaxMinNumInArray(new int[] {78,16,2,14,7,23}));
+		
 		//checker.getAllPrimeWithinSpecifiedLimit(40);
 		/*
 		 * CodeExample ce = new CodeExample(); AddsTwoNumbers atn = new

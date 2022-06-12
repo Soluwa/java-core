@@ -9,7 +9,7 @@ public class PrimeCheckerSingle {
 	boolean isDivisible = false;
 	public String checkIfIsPrime() {
 		Scanner input = new Scanner(System.in);
-		System.out.println("Please eneter a number to check if it is a prime number:");
+		System.out.println("Please enter a number to check if it is a prime number:");
 		num = input.nextInt() ;
 		
 		if(num<=1) isDivisible = false;

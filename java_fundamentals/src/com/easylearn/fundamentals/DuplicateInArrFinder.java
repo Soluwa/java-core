@@ -7,19 +7,24 @@ import java.util.Set;
 
 public class DuplicateInArrFinder {
 	public void findDuplicateInArr(String[] x) {
-		int counter = 0;
-		List<String> duplicates = new ArrayList<>();
-		Set<String> noDuplicateCollection = new HashSet<>();
+		var counter = 0;
+		var duplicates = new ArrayList<>();
+		var noDuplicateCollection = new HashSet<>();
 		
-		for(String i:x) {
+		for(var i:x) {
 			if(!noDuplicateCollection.add(i)) {
 				counter += 1;
 				duplicates.add(i);
 			}
 		}
+		
 		if(counter > 0) {
 			System.out.println("The following values are duplicated in the supplied array: ");
 		}
-		for(String y:duplicates) System.out.println(y);
+		
+		duplicates.forEach(value -> System.out.println(value));
+		//duplicates.stream().forEach(value -> System.out.println(value));
+			
+		 
 	}
 }

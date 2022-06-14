@@ -1,15 +1,21 @@
 package com.easylearn.main;
+import java.text.MessageFormat;
+
 import com.easylearn.fundamentals.AmstrongChecker;
+import com.easylearn.fundamentals.CharDuplicateInStringFinder;
 import com.easylearn.fundamentals.DuplicateInArrFinder;
 import com.easylearn.fundamentals.IntegerReversal;
 import com.easylearn.fundamentals.IntegerReversalWithStringBuffer;
 import com.easylearn.fundamentals.MaxMinNumFinderInArray;
 import com.easylearn.fundamentals.MissingNumberFinderInArr;
+import com.easylearn.fundamentals.NoNumPrinter;
+import com.easylearn.fundamentals.Palindrome;
 import com.easylearn.fundamentals.PrimeCheckerLimit;
 import com.easylearn.fundamentals.PrimeCheckerSingle;
 import com.easylearn.fundamentals.StringReversal;
 import com.easylearn.fundamentals.StringReversalWithBuffer;
 import com.easylearn.fundamentals.StringSwapper;
+import com.easylearn.fundamentals.VowelCounter;
 
 public abstract class Program {
 
@@ -25,9 +31,22 @@ public abstract class Program {
 		DuplicateInArrFinder diaf = new DuplicateInArrFinder();
 		MaxMinNumFinderInArray mmnfia = new MaxMinNumFinderInArray();
 		StringSwapper sss = new StringSwapper();
-		sss.swapStringSupplied("Praise", "Unlimited");
+		Palindrome p = new Palindrome();
+		NoNumPrinter nnp = new NoNumPrinter();
+		CharDuplicateInStringFinder cdisf = new CharDuplicateInStringFinder();
+		VowelCounter vc = new VowelCounter();
 		
-		System.out.println(mmnfia.findMaxMinNumInArray(new int[] {78,16,2,14,7,23}));
+		System.out.println(vc.countVowelInString("I Love You"));
+		
+		cdisf.findDuplicatedCharInString("International");
+		// nnp.printAllWithoutUsingNum();
+		
+			/*
+			 * sss.swapStringSupplied("Praise", "Unlimited");
+			 * 
+			 * System.out.println(p.isPalindrom(49));
+			 * System.out.println(mmnfia.findMaxMinNumInArray(new int[] {78,16,2,14,7,23}));
+			 */
 		
 		//checker.getAllPrimeWithinSpecifiedLimit(40);
 		/*
@@ -46,8 +65,6 @@ public abstract class Program {
 		 */
 		//System.out.println(new TextFileReader().ReadFile(new PathFormer().constructPath("\\Resource\\heavilyoverweightadvice")));
 		//new BMICalculator().calculateBMI();
-		 
-
 	}
 
 }
